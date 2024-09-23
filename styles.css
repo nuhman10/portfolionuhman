@@ -1,0 +1,284 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    font-family: "Gowun Batang", serif;
+    font-weight: 200;
+    font-style: normal;
+
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 4px;
+
+
+}
+
+
+.logo {
+    width: 250px;
+    height: 200px;
+    margin-left: 1%;
+}
+
+.list-items {
+
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+    font-size: 180%;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+    font-weight: 550;
+}
+
+.links:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.homeContent {
+    margin: 13% 0px 0px 8%;
+}
+
+#username {
+    font-size: 55px;
+    margin-bottom: 20px;
+    font-family: "Nerko One", system-ui;
+    font-weight: 250;
+    font-style: normal;
+
+}
+
+#userDetails {
+    font-size: 35px;
+}
+
+#download {
+    font-size: 25px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 30px;
+
+
+}
+
+#name {
+    font-family: "Nerko One", system-ui;
+    font-weight: 250;
+    font-style: normal;
+    color: orange;
+}
+
+#userDetails {
+    line-height: 1.2;
+}
+
+.homeImage {
+    width: 45%;
+    height: 75%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+
+.grp1 {
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 45%;
+    transform: translate(-50%);
+    transition: bottom 2s, left 1s;
+}
+
+.homeImage:hover #shape {
+    bottom: 60px;
+}
+
+.homeImage:hover #girl {
+    left: 30%;
+}
+
+#about{
+    margin: 350px 8px 0px 8px;
+}
+.headings{
+    text-align: center;
+}
+.mainheading{
+    font-size: 30px;
+}
+.subheading{
+    font-size: 30px;
+    color: lightgreen;
+}
+.aboutcontent{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    align-items: center;
+}
+
+.image{
+    width: 80%;
+}
+.content{
+    font-size: 20px;
+    text-align: justify;
+}
+.information{
+    margin-top: 20px;
+}
+.infobox{
+    margin-bottom: 10px;
+}
+.infobox>span{
+    margin-left: 10px;
+}
+#skills{
+    margin: 8% 8% 0% 8%;
+}
+.skillcontent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+    gap: 2rem;
+    margin-top: 20px;
+}
+.bars{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+    padding: 1rem 0px;
+    margin-top: 30px;
+}
+.barhead, .barpercent{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.basebar{
+    width: 100%;
+    height: 0.7rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+.htmlbar{
+    background-color: orange;
+    width: 89%;
+}
+.cssbar{
+    background-color: orange;
+    width: 84%;
+}
+.jsbar{
+    background-color: orange;
+    width: 71%;
+}
+.reactbar{
+    background-color: orange;
+    width: 63%;
+}
+
+#contacts{
+    margin: 8% 8% 0% 8%;
+}
+.iconcollection{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 7%;
+}
+.icons{
+    width: 50px;
+    height: 50px;
+    /* border: solid; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0px 10px;
+
+}
+.brand{
+    color: black;
+    font-size: 2rem;
+    margin-top: 8px;
+}
+.icons:hover{
+    background-image: linear-gradient(120deg,red,green,blue);
+}
+.icons:hover .brand{
+    color: white;
+    /* ..Animation.. */
+    animation: moves 3s;
+}
+
+@keyframes moves{
+    0%{
+        transform: rotate(30deg) ;
+    }
+    20%{
+        transform: rotate(-30deg) ;
+    }
+    40%{
+        transform: rotate(30deg) ;
+    }
+    60%{
+        transform: rotate(-30deg) ;
+    }
+    80%{
+        transform: rotate(30deg) ;
+    }
+    100%{
+        transform: rotate(-30deg) ;
+    }
+}
+
+.footer{
+    margin: 8% 0% 0% 0%;
+}
+
+.copyright{
+    text-align: center;
+    font-weight: 600;
+}
+.uparrow{
+    float: right;
+    margin-top: -35px;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: beige;
+}
+::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 10px;
+}
